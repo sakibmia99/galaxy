@@ -13,208 +13,282 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
 </head>
 
 <body>
 
-    <div class=" ">
-        <div id="header">
-            <div class="">
+
+    <div class="sticky top-0 bg-[#E9F8F9]">
+        <div id="header" class="w-[1200px] mx-auto flex justify-center p-[20px]">
+            <div class="pb-4">
                 <img src="img/gelaxy.png" alt="">
             </div>
-            <div class="pt-6 text-[18px] font-semibold pl-14 hidden md:block">
-                <a class="pr-6" href="index.html">Home</a>
-                <a class="pr-6" href="about.html">About Us</a>
-                <a class="pr-6" href="">Prodect</a>
-                <a class="pr-6" href="services-&-cailbration.html">Services & Calibration</a>
-                <a class="pr-6" href="contact-us.html">Contact Us</a>
-                <a class="pr-6 text-[#63B9C8]" href=""><i class="fa-solid fa-phone-flip"></i></a>
-                <a class="pr-6 text-[#63B9C8]"
+            <div class="pt-6 text-[18px] leading-[30px] font-semibold pl-14 hidden lg:block">
+                <ul class="flex gap-7">
+                    <li><a class="hover:border-b-1" href="index.html">Home</a></li>
+                    <li><a class="hover:border-b-1" href="about.html">About Us</a></li>
+                    <li id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
+                        class="hover:border-b-1 cursor-pointer text-black focus:ring-4 focus:outline-none focus:ring-blue-300 inline-flex items-center text-[18px] font-semibold"
+                        type="button">Products
+                        <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" />
+                        </svg>
+                    </li>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownHover" class="z-10 hidden divide-y divide-gray-100 shadow-sm w-[300px] bg-white">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownHoverButton">
+                            <li>
+                                <a href="land-survey.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Land
+                                    Survey</a>
+                            </li>
+                            <li>
+                                <a href="hydrographic-survey.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Hydrographic
+                                    Survey</a>
+                            </li>
+                            <li>
+                                <a href="Engineering-lab.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Engineering
+                                    Lab</a>
+                            </li>
+                            <li>
+                                <a href="educational-&-research.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Educational
+                                    & Research</a>
+                            </li>
+                            <li>
+                                <a href="textile-testing.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Textile
+                                    Testing</a>
+                            </li>
+                            <li>
+                                <a href="life-science-&-analytical.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Life
+                                    Science & Analytical</a>
+                            </li>
+                            <li>
+                                <a href="healthcare.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Healthcare</a>
+                            </li>
+                            <li>
+                                <a href="projects.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] hover:text-[#4169e1]">Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <li><a class="hover:border-b-1" href="services-&-cailbration.html">Services & Calibration</a></li>
+                    <li><a class="hover:border-b-1" href="contact-us.html">Contact Us</a></li>
+                    <li><a class="text-[#63B9C8]" href=""><i class="fa-solid fa-phone-flip"></i></a></li>
+                    <li><a target="_blank" class="text-[#63B9C8]"
+                            href="https://www.facebook.com/galaxytradetechnologies?mibextid=LQQJ4d"><i
+                                class="fa-brands fa-facebook"></i></a></li>
+                    <li><a class="text-[#63B9C8]" href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+
+            </div>
+            <div class="block lg:hidden">
+                <i class="fa-solid fa-bars pt-7 w-8"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-[48px] leading-[62px] text-white text-center font-bold bg-black py-[205px] mb-20">
+        <h1>Our Story</h1>
+    </div>
+
+    <!-- about us -->
+    <div class="text-center text-[32px] font-semibold">
+        <h1>About Us</h1>
+    </div>
+    <div class="py-[40px] w-[600px] md:w-[1200px] mx-auto">
+
+        <div class="pl-35">
+            <p><span class="font-semibold text-[17px] leading-[32px]">Galaxy Trade & Technologies</span><span
+                    class="leading-[32px] text-[17px] text-[#454f5e]"> – One of the leading
+                    trading
+                    concerns with a view to contribute in the field of Surveying, Science, Engineering &
+                    Information
+                    Technology by importing world renowned brands instruments to drive the country forward.</span>
+            </p>
+            <p class="text-[17px] pt-6 leading-[32px] text-[#454f5e]">Our focus is in the market solutions, which
+                consistently offer value in
+                terms of
+                price and quality. We have a team of dedicated professionals with extensive experience, who
+                committed to working effectively provide unparalleled after- sales support, services &
+                calibration
+                to our valuable clients.</p>
+            <p class="text-[17px] pt-6 leading-[32px] text-[#454f5e]">We believe in customer satisfaction rather
+                than just selling products.</p>
+        </div>
+    </div>
+
+    <div class="flex flex-col pl-5 md:flex-row justify-center  pt-35 w-[900px] md:w-[1200px] m-auto gap-20">
+        <div class="w-[325px] h-[360px] text-center flex flex-col items-center justify-center">
+            <img src="img/mission.png" alt="">
+            <h1 class="text-[32px] font-semibold pt-2 leading-[42px]">OUR MISSION</h1>
+            <p class="text-[20px] pt-5 leading-[37px] text-[#454f5e]">To be an active partner in the development of
+                the country by promoting state
+                of the art technology with a
+                commitment to achieve excellence.</p>
+        </div>
+
+        <div class="w-[325px] h-[360px] text-center flex flex-col items-center justify-center">
+            <img src="img/vision.png" alt="">
+            <h1 class="text-[32px] font-semibold pt-2 leading-[42px]">OUR VISION</h1>
+            <p class="text-[20px] pt-5 leading-[37px] text-[#454f5e]"> To be the leading solution provider in every
+                industry we serve, and
+                consistently offer quality products and services.</p>
+        </div>
+
+        <div class="w-[325px] h-[360px] text-center flex flex-col items-center justify-center">
+            <img src="img/values.png" alt="">
+            <h1 class="text-[32px] font-semibold pt-2 leading-[42px]">OUR VALUES</h1>
+            <p class="text-[20px] pt-5 leading-[37px] text-[#454f5e]"> To establish a culture of honesty, integrity
+                and respect for customers and
+                business partners, while providing unparalleled support and services.</p>
+        </div>
+
+    </div>
+
+
+
+    <div class="pt-40">
+        <div class="text-center bg-[#E9F8F9] p-35 text-[18px] md:text-[24px] font-semibold leading-[29px]">
+            <h1>YOUR TRUSTED TECHNOLOGY PARTENR</h1>
+        </div>
+    </div>
+
+
+
+    <div class="bg-[#54595F] py-30">
+        <div class="text-center text-[32px] leading-[42px] font-semibold text-[#fff]">
+            <h1>Why Galaxy Trade & Technology</h1>
+        </div>
+        <div class="flex flex-col pl-5 md:flex-row justify-center gap-20 pt-20">
+            <div class="w-[327px] h-auto">
+                <h1 class="text-[24px] font-semibold leading-[29px] text-[#fff]">COMMITTED TO QUALITY</h1>
+                <p class="text-[17px] leading-[20px] pt-5 text-[#fff]">Since the qualities of products are vital to
+                    our
+                    customers’
+                    success, and also a key determinant of our own success, we are committed to quality in all
+                    aspects
+                    of
+                    our activities. We are commitment to the highest standards of quality service is best
+                    demonstrated
+                    to
+                    achieving standard certification by following guidelines to provide a comprehensive model for
+                    proper
+                    quality management system, which significantly improves our business. We are dedicated to move
+                    even
+                    beyond the standards guideline, to pursuit of continual improvement of our overall performance
+                    and
+                    efficiency.</p>
+            </div>
+
+            <div class="w-[327px] h-auto">
+                <h1 class="text-[24px] font-semibold leading-[29px] text-[#fff]">COMMITTED TO QUALITY</h1>
+                <p class="text-[17px] leading-[20px] pt-5 text-[#fff]">Since the qualities of products are vital to
+                    our
+                    customers’
+                    success, and also a key determinant of our own success, we are committed to quality in all
+                    aspects
+                    of
+                    our activities. We are commitment to the highest standards of quality service is best
+                    demonstrated
+                    to
+                    achieving standard certification by following guidelines to provide a comprehensive model for
+                    proper
+                    quality management system, which significantly improves our business. We are dedicated to move
+                    even
+                    beyond the standards guideline, to pursuit of continual improvement of our overall performance
+                    and
+                    efficiency.</p>
+            </div>
+
+            <div class="w-[327px] h-auto">
+                <h1 class="text-[24px] font-semibold leading-[29px] text-[#fff]">COMMITTED TO QUALITY</h1>
+                <p class="text-[17px] leading-[20px] pt-5 text-[#fff]">Since the qualities of products are vital to
+                    our
+                    customers’
+                    success, and also a key determinant of our own success, we are committed to quality in all
+                    aspects
+                    of
+                    our activities. We are commitment to the highest standards of quality service is best
+                    demonstrated
+                    to
+                    achieving standard certification by following guidelines to provide a comprehensive model for
+                    proper
+                    quality management system, which significantly improves our business. We are dedicated to move
+                    even
+                    beyond the standards guideline, to pursuit of continual improvement of our overall performance
+                    and
+                    efficiency.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="flex flex-col md:flex-row justify-around gap-20 p-[25px] w-[1200px] mx-auto">
+        <div class="pr-5">
+            <img src="img/gelaxy.png" alt="">
+            <p class="pt-8 text-[17px] leading-[32px]">Complete Solution of Science & <br> Engineering Technologies
+                with <br>
+                Import,
+                Supply, Installation, <br> Service & Calibration of <br> the Equipment’s.</p>
+
+            <div class="mt-13">
+                <a class="hover:text-[#3AA6B9]" target="_blank"
                     href="https://www.facebook.com/galaxytradetechnologies?mibextid=LQQJ4d"><i
                         class="fa-brands fa-facebook"></i></a>
-                <a class="pr-6 text-[#63B9C8]" href=""><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-            <div class="block md:hidden">
-                <i class="fa-solid fa-bars pt-7"></i>
+                <a class="pl-6 hover:text-[#3AA6B9]" target="_blank"
+                    href="https://www.linkedin.com/company/galaxytechbd/"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
-
-
-        <!-- about us -->
-        <div class="py-[40px] pr-70 w-[600px] md:w-[1200px] mx-auto">
-            <div class="text-center text-[32px] font-semibold">
-                <h1> About Us</h1>
-            </div>
-            <div class="pt-7">
-                <p><span class="font-semibold text-[17px] leading-[32px]">Galaxy Trade & Technologies</span><span
-                        class="leading-[32px] text-[17px] text-[#454f5e]"> – One of the leading
-                        trading
-                        concerns with a view to contribute in the field of Surveying, Science, Engineering &
-                        Information
-                        Technology by importing world renowned brands instruments to drive the country forward.</span>
-                </p>
-                <p class="text-[17px] pt-6 leading-[32px] text-[#454f5e]">Our focus is in the market solutions, which
-                    consistently offer value in
-                    terms of
-                    price and quality. We have a team of dedicated professionals with extensive experience, who
-                    committed to working effectively provide unparalleled after- sales support, services &
-                    calibration
-                    to our valuable clients.</p>
-                <p class="text-[17px] pt-6 leading-[32px] text-[#454f5e]">We believe in customer satisfaction rather
-                    than just selling products.</p>
-            </div>
+        <div>
+            <h1 class="text-[22px] font-semibold leading-[33px]">Products</h1>
+            <h1 class="text-[17px] pt-7 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a
+                    href="land-survey.html">Land Survey </a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a
+                    href="hydrographic-survey.html">Hydrographic Survey</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a
+                    href="Engineering-lab.html">Engineering lab</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a
+                    href="educational-&-research.html">Education & Research </a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a
+                    href="textile-testing.html">Textile Testing</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a
+                    href="life-science-&-analytical.html">Life Science & Analytical</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a
+                    href="healthcare.html">Healthcare</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a
+                    href="projects.html">Projects</a></h1>
         </div>
-
-        <div class="flex flex-col pl-5 md:flex-row justify-center  pt-35 w-[900px] md:w-[1200px] m-auto gap-20">
-            <div class="w-[325px] h-[360px] text-center flex flex-col items-center justify-center">
-                <img src="img/mission.png" alt="">
-                <h1 class="text-[32px] font-semibold pt-2 leading-[42px]">OUR MISSION</h1>
-                <p class="text-[20px] pt-5 leading-[37px] text-[#454f5e]">To be an active partner in the development of
-                    the country by promoting state
-                    of the art technology with a
-                    commitment to achieve excellence.</p>
-            </div>
-
-            <div class="w-[325px] h-[360px] text-center flex flex-col items-center justify-center">
-                <img src="img/vision.png" alt="">
-                <h1 class="text-[32px] font-semibold pt-2 leading-[42px]">OUR VISION</h1>
-                <p class="text-[20px] pt-5 leading-[37px] text-[#454f5e]"> To be the leading solution provider in every
-                    industry we serve, and
-                    consistently offer quality products and services.</p>
-            </div>
-
-            <div class="w-[325px] h-[360px] text-center flex flex-col items-center justify-center">
-                <img src="img/values.png" alt="">
-                <h1 class="text-[32px] font-semibold pt-2 leading-[42px]">OUR VALUES</h1>
-                <p class="text-[20px] pt-5 leading-[37px] text-[#454f5e]"> To establish a culture of honesty, integrity
-                    and respect for customers and
-                    business partners, while providing unparalleled support and services.</p>
-            </div>
-
+        <div>
+            <h1 class="text-[22px] font-semibold">Quick Links</h1>
+            <h1 class="text-[17px] pt-7 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a
+                    href="index.html">Home</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a href="about.html">About
+                    Us</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a
+                    href="services-&-cailbration.html">Services & Calibration</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a
+                    href="contact-us.html">Contact Us</a></h1>
         </div>
-
-
-
-        <div class="pt-40">
-            <div class="text-center bg-[#E9F8F9] p-35 text-[18px] md:text-[24px] font-semibold leading-[29px]">
-                <h1>YOUR TRUSTED TECHNOLOGY PARTENR</h1>
-            </div>
+        <div>
+            <h1 class="text-[22px] font-semibold">Our Location</h1>
+            <h1 class="text-[22px] font-semibold pt-7">Corporate Office</h1>
+            <p class="text-[#454f5e] leading-[32px]">64/1 (3rd floor – D1), Lake Circus,</p>
+            <p class="pt-2 text-[#454f5e] leading-[32px]">Kalabagan, Dhaka -1205</p>
         </div>
-
-
-
-        <div class="bg-[#54595F] py-30">
-            <div class="text-center text-[32px] leading-[42px] font-semibold text-[#fff]">
-                <h1>Why Galaxy Trade & Technology</h1>
-            </div>
-            <div class="flex flex-col pl-5 md:flex-row justify-center gap-20 pt-20">
-                <div class="w-[327px] h-auto">
-                    <h1 class="text-[24px] font-semibold leading-[29px] text-[#fff]">COMMITTED TO QUALITY</h1>
-                    <p class="text-[17px] leading-[20px] pt-5 text-[#fff]">Since the qualities of products are vital to
-                        our
-                        customers’
-                        success, and also a key determinant of our own success, we are committed to quality in all
-                        aspects
-                        of
-                        our activities. We are commitment to the highest standards of quality service is best
-                        demonstrated
-                        to
-                        achieving standard certification by following guidelines to provide a comprehensive model for
-                        proper
-                        quality management system, which significantly improves our business. We are dedicated to move
-                        even
-                        beyond the standards guideline, to pursuit of continual improvement of our overall performance
-                        and
-                        efficiency.</p>
-                </div>
-
-                <div class="w-[327px] h-auto">
-                    <h1 class="text-[24px] font-semibold leading-[29px] text-[#fff]">COMMITTED TO QUALITY</h1>
-                    <p class="text-[17px] leading-[20px] pt-5 text-[#fff]">Since the qualities of products are vital to
-                        our
-                        customers’
-                        success, and also a key determinant of our own success, we are committed to quality in all
-                        aspects
-                        of
-                        our activities. We are commitment to the highest standards of quality service is best
-                        demonstrated
-                        to
-                        achieving standard certification by following guidelines to provide a comprehensive model for
-                        proper
-                        quality management system, which significantly improves our business. We are dedicated to move
-                        even
-                        beyond the standards guideline, to pursuit of continual improvement of our overall performance
-                        and
-                        efficiency.</p>
-                </div>
-
-                <div class="w-[327px] h-auto">
-                    <h1 class="text-[24px] font-semibold leading-[29px] text-[#fff]">COMMITTED TO QUALITY</h1>
-                    <p class="text-[17px] leading-[20px] pt-5 text-[#fff]">Since the qualities of products are vital to
-                        our
-                        customers’
-                        success, and also a key determinant of our own success, we are committed to quality in all
-                        aspects
-                        of
-                        our activities. We are commitment to the highest standards of quality service is best
-                        demonstrated
-                        to
-                        achieving standard certification by following guidelines to provide a comprehensive model for
-                        proper
-                        quality management system, which significantly improves our business. We are dedicated to move
-                        even
-                        beyond the standards guideline, to pursuit of continual improvement of our overall performance
-                        and
-                        efficiency.</p>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <div class="flex flex-col md:flex-row justify-center gap-20 p-[25px] w-[1200px] mx-auto">
-            <div class="pr-5">
-                <img src="img/gelaxy.png" alt="">
-                <p class="pt-8 text-[17px] leading-[32px]">Complete Solution of Science & <br> Engineering Technologies
-                    with <br>
-                    Import,
-                    Supply, Installation, <br> Service & Calibration of <br> the Equipment’s.</p>
-                <br>
-                <br>
-                <br>
-                <a target="_blank" href="https://www.facebook.com/galaxytradetechnologies?mibextid=LQQJ4d"><i
-                        class="fa-brands fa-facebook"></i></a>
-                <a target="_blank" class="pl-6" href="https://www.linkedin.com/company/galaxytechbd/"><i
-                        class="fa-brands fa-linkedin"></i></a>
-            </div>
-            <div class=" mr-30">
-                <h1 class="text-[22px] font-semibold leading-[33px]">Products</h1>
-                <h1 class="text-[17px] pt-7 text-[#454f5e] leading-[32px]"><a href="">Land Survey </a></h1>
-                <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px]"><a href="">Hydrographic Survey</a></h1>
-                <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px]"><a href="">Engineering lab</a></h1>
-                <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px]"><a href="">Education & Research </a></h1>
-                <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px]"><a href="">Textile Testing</a></h1>
-                <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px]"><a href="">Life Science & Analytical</a></h1>
-                <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px]"><a href="">Healthcare</a></h1>
-                <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px]"><a href="">Projects</a></h1>
-            </div>
-            <div>
-                <h1 class="text-[22px] font-semibold">Quick Links</h1>
-                <h1 class="text-[17px] pt-7 text-[#454f5e] leading-[32px]"><a href="">Home</a></h1>
-                <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px]"><a href="">About Us</a></h1>
-                <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px]"><a href="">Services & Calibration</a></h1>
-                <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px]"><a href="">Contact Us</a></h1>
-            </div>
-            <div>
-                <h1 class="text-[22px] font-semibold">Our Location</h1>
-                <h1 class="text-[22px] font-semibold pt-7">Corporate Office</h1>
-                <p class="text-[#454f5e] leading-[32px]">64/1 (3rd floor – D1), Lake Circus,</p>
-                <p class="pt-2 text-[#454f5e] leading-[32px]">Kalabagan, Dhaka -1205</p>
-            </div>
-        </div>
-         <div class="bg-[#E9F8F9]">
-            <div class=" w-[1200px] mx-auto flex flex-col md:flex-row justify-between p-5 text-[14px] pr-50">
+    </div>
+    <div class="bg-[#E9F8F9]">
+        <div class=" w-[1200px] mx-auto flex flex-col md:flex-row justify-between p-5 text-[14px] pr-50">
             <div class="leading-[24px]">
                 <h1>© 2025 Galaxy Trade & Technologies</h1>
             </div>
@@ -222,9 +296,9 @@
                 <h1>Developed By DzoneIT.</h1>
             </div>
         </div>
-         </div>
     </div>
-
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>

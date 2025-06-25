@@ -13,27 +13,89 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
 </head>
 
 <body>
 
-    <div id="header">
-        <div class="">
-            <img src="img/gelaxy.png" alt="">
-        </div>
-        <div class="pt-6 text-[18px] font-semibold pl-14">
-            <a class="pr-6" href="index.html">Home</a>
-            <a class="pr-6" href="about.html">About Us</a>
-            <a class="pr-6" href="">Prodect</a>
-            <a class="pr-6" href="">Services & Calibration</a>
-            <a class="pr-6" href="">contact Us</a>
-            <a class="pr-6 text-[#63B9C8]" href=""><i class="fa-solid fa-phone-flip"></i></a>
-            <a class="pr-6 text-[#63B9C8]" href="https://www.facebook.com/galaxytradetechnologies?mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
-            <a class="pr-6 text-[#63B9C8]" href=""><i class="fa-brands fa-linkedin"></i></a>
+    <div class="sticky top-0 bg-[#E9F8F9]">
+        <div id="header" class="w-[1200px] mx-auto flex justify-center p-[20px]">
+            <div class="pb-4">
+                <img src="img/gelaxy.png" alt="">
+            </div>
+            <div class="pt-6 text-[18px] leading-[30px] font-semibold pl-14 hidden lg:block">
+                <ul class="flex gap-7">
+                    <li><a class="hover:border-b-1" href="index.html">Home</a></li>
+                    <li><a class="hover:border-b-1" href="about.html">About Us</a></li>
+                    <li id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
+                        class="hover:border-b-1 cursor-pointer text-black focus:ring-4 focus:outline-none focus:ring-blue-300 inline-flex items-center text-[18px] font-semibold"
+                        type="button">Products
+                        <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" />
+                        </svg>
+                    </li>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownHover" class="z-10 hidden divide-y divide-gray-100 shadow-sm w-[300px] bg-white">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownHoverButton">
+                            <li>
+                                <a href="land-survey.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Land
+                                    Survey</a>
+                            </li>
+                            <li>
+                                <a href="hydrographic-survey.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Hydrographic
+                                    Survey</a>
+                            </li>
+                            <li>
+                                <a href="Engineering-lab.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Engineering
+                                    Lab</a>
+                            </li>
+                            <li>
+                                <a href="educational-&-research.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Educational
+                                    & Research</a>
+                            </li>
+                            <li>
+                                <a href="textile-testing.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Textile
+                                    Testing</a>
+                            </li>
+                            <li>
+                                <a href="life-science-&-analytical.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Life
+                                    Science & Analytical</a>
+                            </li>
+                            <li>
+                                <a href="healthcare.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Healthcare</a>
+                            </li>
+                            <li>
+                                <a href="projects.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] hover:text-[#4169e1]">Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <li><a class="hover:border-b-1" href="services-&-cailbration.html">Services & Calibration</a></li>
+                    <li><a class="hover:border-b-1" href="contact-us.html">Contact Us</a></li>
+                    <li><a class="text-[#63B9C8]" href=""><i class="fa-solid fa-phone-flip"></i></a></li>
+                    <li><a target="_blank" class="text-[#63B9C8]"
+                            href="https://www.facebook.com/galaxytradetechnologies?mibextid=LQQJ4d"><i
+                                class="fa-brands fa-facebook"></i></a></li>
+                    <li><a class="text-[#63B9C8]" href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+
+            </div>
+            <div class="block lg:hidden">
+                <i class="fa-solid fa-bars pt-7 w-8"></i>
+            </div>
         </div>
     </div>
 
-    <div class="bg-black py-25">
+    <div style="background-image: url(img/project.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat;" class="py-45">
         <h1 class="text-center text-[48px] font-semibold leading-[62px] text-white">Projects</h1>
     </div>
 
@@ -70,31 +132,31 @@
                 with <br>
                 Import,
                 Supply, Installation, <br> Service & Calibration of <br> the Equipment’s.</p>
-            <br>
-            <br>
-            <br>
-            <a target="_blank" href="https://www.facebook.com/galaxytradetechnologies?mibextid=LQQJ4d"><i
-                    class="fa-brands fa-facebook"></i></a>
-            <a target="_blank" class="pl-6" href="https://www.linkedin.com/company/galaxytechbd/"><i
-                    class="fa-brands fa-linkedin"></i></a>
+            <div class="mt-13">
+                <a class="hover:text-[#3AA6B9]" target="_blank"
+                    href="https://www.facebook.com/galaxytradetechnologies?mibextid=LQQJ4d"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a class="pl-6 hover:text-[#3AA6B9]" target="_blank"
+                    href="https://www.linkedin.com/company/galaxytechbd/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
         </div>
         <div class=" mr-30">
             <h1 class="text-[22px] font-semibold leading-[33px]">Products</h1>
-            <h1 class="text-[17px] pt-7 text-[#454f5e] leading-[32px]"><a href="">Land Survey </a></h1>
-            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px]"><a href="">Hydrographic Survey</a></h1>
-            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px]"><a href="">Engineering lab</a></h1>
-            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px]"><a href="">Education & Research </a></h1>
-            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px]"><a href="">Textile Testing</a></h1>
-            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px]"><a href="">Life Science & Analytical</a></h1>
-            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px]"><a href="">Healthcare</a></h1>
-            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px]"><a href="">Projects</a></h1>
+            <h1 class="text-[17px] pt-7 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a href="">Land Survey </a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a href="">Hydrographic Survey</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a href="">Engineering lab</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a href="">Education & Research </a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a href="">Textile Testing</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a href="">Life Science & Analytical</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a href="">Healthcare</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a href="">Projects</a></h1>
         </div>
         <div>
             <h1 class="text-[22px] font-semibold">Quick Links</h1>
-            <h1 class="text-[17px] pt-7 text-[#454f5e] leading-[32px]"><a href="">Home</a></h1>
-            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px]"><a href="">About Us</a></h1>
-            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px]"><a href="">Services & Calibration</a></h1>
-            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px]"><a href="">Contact Us</a></h1>
+            <h1 class="text-[17px] pt-7 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a href="">Home</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a href="">About Us</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a href="">Services & Calibration</a></h1>
+            <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px] hover:text-[#3AA6B9]"><a href="">Contact Us</a></h1>
         </div>
         <div>
             <h1 class="text-[22px] font-semibold">Our Location</h1>
@@ -112,7 +174,7 @@
         </div>
     </div>
 
-
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>

@@ -13,59 +13,124 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
 </head>
 
 <body>
 
-    <div id="header">
-        <div class="">
-            <img src="img/gelaxy.png" alt="">
-        </div>
-        <div class="pt-6 text-[18px] font-semibold pl-14">
-            <a class="pr-6" href="index.html">Home</a>
-            <a class="pr-6" href="about.html">About Us</a>
-            <a class="pr-6" href="">Prodect</a>
-            <a class="pr-6" href="">Services & Calibration</a>
-            <a class="pr-6" href="">contact Us</a>
-            <a class="pr-6 text-[#63B9C8]" href=""><i class="fa-solid fa-phone-flip"></i></a>
-            <a class="pr-6 text-[#63B9C8]" href="https://www.facebook.com/galaxytradetechnologies?mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
-            <a class="pr-6 text-[#63B9C8]" href=""><i class="fa-brands fa-linkedin"></i></a>
+     <div class="sticky top-0 bg-[#E9F8F9]">
+        <div id="header" class="w-[1200px] mx-auto flex justify-center p-[20px]">
+            <div class="pb-4">
+                <img src="img/gelaxy.png" alt="">
+            </div>
+            <div class="pt-6 text-[18px] leading-[30px] font-semibold pl-14 hidden lg:block">
+                <ul class="flex gap-7">
+                    <li><a class="hover:border-b-1" href="index.html">Home</a></li>
+                    <li><a class="hover:border-b-1" href="about.html">About Us</a></li>
+                    <li id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
+                        class="hover:border-b-1 cursor-pointer text-black focus:ring-4 focus:outline-none focus:ring-blue-300 inline-flex items-center text-[18px] font-semibold"
+                        type="button">Products
+                        <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" />
+                        </svg>
+                    </li>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownHover" class="z-10 hidden divide-y divide-gray-100 shadow-sm w-[300px] bg-white">
+                        <ul class="py-2 text-sm text-black" aria-labelledby="dropdownHoverButton">
+                            <li>
+                                <a href="land-survey.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Land
+                                    Survey</a>
+                            </li>
+                            <li>
+                                <a href="hydrographic-survey.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Hydrographic
+                                    Survey</a>
+                            </li>
+                            <li>
+                                <a href="Engineering-lab.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Engineering
+                                    Lab</a>
+                            </li>
+                            <li>
+                                <a href="educational-&-research.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Educational
+                                    & Research</a>
+                            </li>
+                            <li>
+                                <a href="textile-testing.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Textile
+                                    Testing</a>
+                            </li>
+                            <li>
+                                <a href="life-science-&-analytical.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Life
+                                    Science & Analytical</a>
+                            </li>
+                            <li>
+                                <a href="healthcare.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] border-b-1 border-b-[#eaeaea] hover:text-[#4169e1]">Healthcare</a>
+                            </li>
+                            <li>
+                                <a href="projects.html"
+                                    class="block px-4 py-3 text-[18px] leading-[26px] hover:text-[#4169e1]">Projects</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <li><a class="hover:border-b-1" href="services-&-cailbration.html">Services & Calibration</a></li>
+                    <li><a class="hover:border-b-1" href="contact-us.html">Contact Us</a></li>
+                    <li><a class="text-[#63B9C8]" href=""><i class="fa-solid fa-phone-flip"></i></a></li>
+                    <li><a target="_blank" class="text-[#63B9C8]"
+                            href="https://www.facebook.com/galaxytradetechnologies?mibextid=LQQJ4d"><i
+                                class="fa-brands fa-facebook"></i></a></li>
+                    <li><a class="text-[#63B9C8]" href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+
+            </div>
+            <div class="block lg:hidden">
+                <i class="fa-solid fa-bars pt-7 w-8"></i>
+            </div>
         </div>
     </div>
 
-
-    <div class="bg-black">
-        <div class="text-center w-[1200px] m-auto text-white p-30">
+    <div style="background-image: url(img/Hydrograpic-Survey-2.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        <div class="text-center md:w-[1200px] m-auto text-white md:p-35">
             <div>
-                <h1 class="text-[48px] leading-[62px]">Hydrographic Surveying Instruments</h1>
+                <h1 class="text-[48px] leading-[72px] font-bold">Hydrographic Surveying Instruments</h1>
             </div>
             <div class="pt-5">
-                <p class="text-[17px] leading-[32px]">Everything you need for hydrographic and bathymetric survey solutions ranging from a</p>
-                <p class="text-[17px] leading-[32px]">compact, cost-effective single-beam echo sounder to a high-end multihull survey vessel with</p>
-                <p class="text-[17px] leading-[32px]">a multi-beam echo sounder, ensuring that you obtain highly accurate bathymetric data and</p>
+                <p class="text-[17px] leading-[32px]">Everything you need for hydrographic and bathymetric survey
+                    solutions ranging from a</p>
+                <p class="text-[17px] leading-[32px]">compact, cost-effective single-beam echo sounder to a high-end
+                    multihull survey vessel with</p>
+                <p class="text-[17px] leading-[32px]">a multi-beam echo sounder, ensuring that you obtain highly
+                    accurate bathymetric data and</p>
                 <p class="text-[17px] leading-[32px]">that your projects are completed efficiently and on time.</p>
             </div>
         </div>
     </div>
 
-    <div class="w-[1200px] m-auto pt-15 sticky top-23.5">
+    <div class="md:w-[1200px] m-auto pt-15 sticky top-17 md:top-23.5">
         <div
-            class="text-[48px] font-bold leading-[62px] bg-[#6EC1E4] text-center w-[1200px] rounded-[30px] text-white shadow-2xs">
+            class="text-[30px] md:text-[48px] font-semibold md:font-bold leading-[32px] md:leading-[62px] bg-[#6EC1E4] text-center  md:w-[1200px] rounded-[30px] text-white shadow-2xs">
             <h1>We are Authorized Dealer of CHCNAV</h1>
         </div>
     </div>
 
-    <div class="text-[24px] leading-[29px] font-semibold text-center w-[1200px] m-auto pt-11">
+    <div class="text-[22px] md:text-[24px] leading-[25px] md:leading-[29px] font-semibold text-center md:w-[1200px] m-auto pt-11">
         <h1>CHCNAV - Echo Sounder</h1>
     </div>
 
     <!-- CHCNAV - Echo Sounder -->
 
-    <div class="flex justify-center w-[1200px] m-auto gap-6 pt-8">
+    <div class="flex flex-col md:flex-row justify-center md:w-[1200px] m-auto gap-6 pt-8">
         <div class="w-[340px]">
             <a href=""><img src="img/Echo Sounder-1.jpg" alt=""></a>
             <p class="text-[14px] leading-[18px] text-[#454f5e]">CHCNAV - Echo Sounder</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">D390 – Integrated Single Beam Echo Sounder</a></h1>
+            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">D390 – Integrated Single Beam Echo
+                    Sounder</a></h1>
             <h1
                 class=" w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg text-center pt-3 text-[17px] leading-[20px] font-sans mt-4">
                 <a href=""><button>READ MORE</button></a>
@@ -93,7 +158,8 @@
         <div class="w-[340px]">
             <a href=""><img src="img/Echo Sounder-4.jpg" alt=""></a>
             <p class="text-[14px] leading-[18px] text-[#454f5e]">CHCNAV - Echo Sounder</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">D230 – Single Beam Echo Sounder</a></h1>
+            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">D230 – Single Beam Echo Sounder</a>
+            </h1>
             <h1
                 class=" w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg text-center pt-3 text-[17px] leading-[20px] font-sans mt-4">
                 <a href=""><button>READ MORE</button></a>
@@ -105,15 +171,16 @@
 
 
     <!-- CHANAV – Unmanned Survey Vessel (USV) -->
-     <div class="text-[24px] leading-[29px] font-semibold text-center w-[1200px] m-auto pt-11">
+    <div class="text-[18px] md:text-[24px] leading-[23px] md:leading-[29px] font-semibold text-center md:w-[1200px] m-auto pt-11">
         <h1> CHANAV – Unmanned Survey Vessel (USV)</h1>
     </div>
 
-    <div class="flex justify-center w-[1200px] m-auto gap-6 pt-15">
+    <div class="flex flex-col md:flex-row justify-center md:w-[1200px] m-auto gap-6 pt-15">
         <div class="w-[340px]">
             <a href=""><img class="w-[285px] h-[250px]" src="img/Unmanned Survey Vessel (USV)-1.jpg" alt=""></a>
             <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHANAV – Unmanned Survey Vessel (USV)</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">APACHE 3 Pro USV High Performance Single Beam Marine Drone</a></h1>
+            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">APACHE 3 Pro USV High Performance
+                    Single Beam Marine Drone</a></h1>
             <h1
                 class=" w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg text-center pt-3 text-[17px] leading-[20px] font-sans mt-4">
                 <a href=""><button>READ MORE</button></a>
@@ -122,7 +189,8 @@
         <div class="w-[340px]">
             <a href=""><img class="w-[285px] h-[250px]" src="img/Unmanned Survey Vessel (USV)-2.png" alt=""></a>
             <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHANAV – Unmanned Survey Vessel (USV)</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">APACHE 3 USV Single Beam Marine Drone</a>
+            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">APACHE 3 USV Single Beam Marine
+                    Drone</a>
             </h1>
             <h1
                 class=" w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg text-center pt-3 text-[17px] leading-[20px] font-sans mt-4">
@@ -132,7 +200,8 @@
         <div class="w-[340px]">
             <a href=""><img class="w-[285px] h-[250px]" src="img/Unmanned Survey Vessel (USV)-3.png" alt=""></a>
             <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHANAV – Unmanned Survey Vessel (USV)</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">APACHE 4 USV With Integrated ADCP and Echosounder</a></h1>
+            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">APACHE 4 USV With Integrated ADCP and
+                    Echosounder</a></h1>
             <h1
                 class=" w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg text-center pt-3 text-[17px] leading-[20px] font-sans mt-4">
                 <a href=""><button>READ MORE</button></a>
@@ -141,7 +210,8 @@
         <div class="w-[340px]">
             <a href=""><img class="w-[285px] h-[250px]" src="img/Unmanned Survey Vessel (USV)-4.png" alt=""></a>
             <p class="text-[14px] leading-[18px] text-[#454f5e] pt-4">CHANAV – Unmanned Survey Vessel (USV)</p>
-            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">APACHE 6 USV With Norbit Multibeam Echosounder</a></h1>
+            <h1 class="text-[16px] leading-[21px] font-medium pt-2.5"><a href="">APACHE 6 USV With Norbit Multibeam
+                    Echosounder</a></h1>
             <h1
                 class=" w-[133px] h-[45px] bg-[#e9f8f9] rounded-lg text-center pt-3 text-[17px] leading-[20px] font-sans mt-4">
                 <a href=""><button>READ MORE</button></a>
@@ -150,35 +220,8 @@
 
     </div>
 
- 
 
-
-   
-
-    
- 
- 
-
-
-
-    
-
-
-
- 
-
-
-    
-
-
-
- 
-
-
- 
-
-
-    <div class="flex justify-center gap-20 p-[25px] pt-37 w-[1200px] mx-auto">
+    <div class="flex flex-col md:flex-row justify-center gap-20 p-[15px] md:p-[25px] mt-20 md:w-[1200px] mx-auto">
         <div class="pr-5">
             <img src="img/gelaxy.png" alt="">
             <p class="pt-8 text-[17px] leading-[32px]">Complete Solution of Science & <br> Engineering Technologies
@@ -193,7 +236,7 @@
             <a target="_blank" class="pl-6" href="https://www.linkedin.com/company/galaxytechbd/"><i
                     class="fa-brands fa-linkedin"></i></a>
         </div>
-        <div class=" mr-30">
+        <div class="mr-30">
             <h1 class="text-[22px] font-semibold leading-[33px]">Products</h1>
             <h1 class="text-[17px] pt-7 text-[#454f5e] leading-[32px]"><a href="">Land Survey </a></h1>
             <h1 class="text-[17px] pt-2 text-[#454f5e] leading-[32px]"><a href="">Hydrographic Survey</a></h1>
@@ -218,7 +261,7 @@
             <p class="pt-2 text-[#454f5e] leading-[32px]">Kalabagan, Dhaka -1205</p>
         </div>
     </div>
-    <div class="bg-[#E9F8F9] flex justify-around p-5 text-[14px] pr-50">
+    <div class="bg-[#E9F8F9] flex flex-col md:flex-row text-center md:justify-around p-5 text-[14px]">
         <div class="leading-[24px]">
             <h1>© 2025 Galaxy Trade & Technologies</h1>
         </div>
@@ -227,7 +270,7 @@
         </div>
     </div>
 
-
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>
